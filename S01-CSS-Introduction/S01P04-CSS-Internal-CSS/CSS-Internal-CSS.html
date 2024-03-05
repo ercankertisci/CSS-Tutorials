@@ -1,0 +1,35 @@
+<!--
+    daha önce öğrendiğimiz gibi, <head> bölgesine yazılan CSS kodlarına dahili
+    CSS kodu deniliyordu. 
+    Komut içine CSS kodu yazmaktansa <head> tagı içine yazmak tercih edilmelidir.
+    Çünkü <head> tagı içine yazılan CSS kodları daha derli toplu görünür ve çalışması daha kolaydır.
+
+    <head> tagı içine CSS kodu yazmak için <style> tagı kullanılır.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style tyoe="text/css">
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>head bolgesine yazilan CSS kodları denemek icin yazilan metinler</p>
+</body>
+</html>
+
+<!--
+    daha öncede belirttiimiz gibi css kodlarını komut içine yazmaktansa <head> tagı tercih edilmelidir.
+    Fakat şunu da açıkça belirtmekte fayda var, çoğu profesyonel web tasarımcı bu yöntemi tercih etmemektedir.
+    çünkü bir sitede onlarca hatta yüzlerce sayfa olur. eğer her sayfadaki görselleştirme işlemini head tagı
+    içine css kodu yazarak yaparsanız çok zaman kaybedersiniz.
+-->
