@@ -1,0 +1,61 @@
+<!--
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        p:first-child{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>birinci paragraf</p>
+    <p>ikinci paragraf</p>
+    <p>ucuncu paragraf</p>
+</body>
+</html>
+
+<!--
+    eger yukarida listelenen paragraflardan ilkini secmek isterseniz p:first-child, sonuncusunu secmek isterseniz
+    p:last-child, n.paragrafı secmek isterseniz p:nth-child(n) secicisini kullanabilirsiniz.
+-->
+
+<!--
+    asagidaki kodlarda ise <ul> tagının icinde olan <li> tagının son elemani secilmektedir.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        ul li:last-child{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>kurslarimiz</h1>
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+    </ul>
+</body>
+</html>
+
+
+
