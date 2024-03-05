@@ -1,0 +1,62 @@
+<!--
+
+    CSS kodları kullanarak linkler üzerinde değişik görselleştirmeler yapabilirsiniz.
+    Örneğin, linklerin rengini, yazı tipini, boyutunu değiştirerek daha profesyonel görüntüler elde edebilirsiniz.
+    Ayrıca linkin durumuna göre farklı biçimler de uygulama şansınız var. Örneğin; ziyaret edilmiş linkler mavi iken,
+    ziyaret edilmiş linkleri sarı yapabilirsiniz.
+
+    Linkere ve linklerin durumuna göre biçimlendirme uygulamak için aşağıdaki seçiciler kullanılır.
+    
+    a:link      -> henüz ziyaret edilmemiş linkleri seçer.
+    a:visited   -> ziyaret edilmiş linkleri seçer.
+    a:focus     -> klavye ile etkinleştirilmiş linkleri seçer.
+    a:hover     -> üzerinde fare olan linkleri seçer.
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    
+    a:link{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: red;
+    }
+    a:visited{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: blue;
+    }
+    a:hover{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: green;
+    }
+    </style>
+</head>
+<body>
+    <h1>Gezinti Menüsü</h1>
+    <a href="index.html">Anasayfa</a>
+    <a href="urunlerimiz.html">Ürünlerimiz</a>
+    <a href="hizmetlerimiz.html">Hizmetlerimiz</a>
+    <a href="iletisim.html">İletişim</a>
+
+
+
+</body>
+</html>
+
+<!--
+    liknlerin yazı tipi arial, boyutu 20px olacaktır.
+    ayrıca henüz ziyaret edilmemiş linkler kırmızı, ziyaret edilen linkler mavi ve farenin altında
+    kalan linkler ise yeşil olacaktır.
+-->
