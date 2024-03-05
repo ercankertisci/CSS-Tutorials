@@ -1,0 +1,44 @@
+<!--
+
+    External CSS kodları
+
+    ** harici css kodları proje klasörü içinde bulunan metin tabanlı bir dosya içine yazılır ve 
+    ihtiyaç duyulan her sayfaya bağlanır.(link)
+
+    ** her sayfa için ayrı ayrı css kodu yazmaktansa tüm css kodları tek bir dosya içine yazılır ve sitedeki
+    web sayfalarına uygulanır. böylece hem kod yazması hem düzenlemesi daha kolay olur.
+
+    ** ayrıca tüm web sayfalarının görsel özelliklerini tek bir noktadan yönetmiş olursunuz. 
+
+    ** Örneğin css dosyasında <p> tagının rengini yeşil yaparsınız, tüm web sayfalarındaki <p> tagı içinde bulunan
+        metinler yeşil olur.
+
+    ** css kodlarının yazıldığı dosyanın uzantısı css olmalıdır.
+
+    ** css dosyanızı oluşturduktan sonra artık içine css kodlarınızı yazabilirsiniz. 
+
+    ** yazdığınız css kodlarının herhangi bir web sayfasında çalışmasını istiyorsanız ilgili web sayfasının head bölümüne 
+    aşağıdaki kodları yazmalısınız.
+
+    <link rel="stylesheet" href="stil.css" type="text/css"/>
+
+    ** yukarıdaki kodlar sayesinde stil.css dosyası web sayfasına link ediliyor yani bağlanıyor.
+
+    ** böylece harici css dosyasında yazdığınız tüm kodlar sanki sayfa içinde yazılmış gibi çalışıyor.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="00051_CSS_ExternalCSS.css" type="text/css"/>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laboriosam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+</body>
+</html>
