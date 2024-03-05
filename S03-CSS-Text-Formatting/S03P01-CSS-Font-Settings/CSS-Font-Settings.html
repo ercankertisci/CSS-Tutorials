@@ -1,0 +1,63 @@
+<!--
+    Bir web sitesinde en cok uğraşacağınız işlerden biri metinlerin rengini, yazı tipini ve boyut ayarlarını yapmaktır.
+    Neyse ki tüm bu işler CSS ile çok kolay bir şekilde yapılmaktadır.
+
+    Neyse ki tüm bu işler CSS ile çok kolay bir şekilde yapılmaktadır. Yazı tipi seçiminde bilmeniz ve dikkat etmeniz gereken en önemli
+    konulardan biri bütüm bilgisayarlarda bulunan yazı tiplerinin kullanılmasıdır. 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            color: blue;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>W3C Kimdir?</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur vero adipisci nobis quaerat et
+        sapiente minima ratione odit non.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, deserunt.</p>
+</body>
+
+</html>
+
+<!--
+    yukarıdaki css kodları ile <body> tagı icindeki tüm metinler mavi renkli, 16px boyutunda ve verdana yazı tipi yapılır.
+    <body> tagı altında bulunan baslik taglarına kırmızı ve arial yazı tipi uygulanır.
+    eger basliklar icin ayrı bir css kodu yazılmasaydı onlar da diger metinler gibi gözükecekti. çünkü ebeveynlerin sahip
+    oldugu özellikler ya da CSS kodları çocuklara da uygulanır.
+
+
+    her bilgisayarda her yazı tipi olmayabilir. eger sizin belirlediginiz yazı tipi yoksa metinler varsayılan yazi tipi ile
+    gösterilir. bu durumnun önüne gecmek icin yazdiginiz css kodlarında tek bir yazı tipi degil de birkaç yazı tipi belirtmenizde
+    fayda var.
+
+    h1,h2,h3,h4{
+        font-family: arial, verdana, "times new roman", "courier new";
+    }
+
+    yukarıdaki kodlarda görüldüğü gibi, eğer ziyaretçinin bilgisayarında arial yazı tipi varsa basliklar arial yazı tipi ile
+    görüntülenecek. 
+    eğer arial yazı tipi yoksa sıradaki yazı tipi kullanılacak. 
+    eğer 3 yazı tipi de yoksa tarayıcının varsayılan yazı tipi kullanılacak. 
+    bir kaç kelimeden oluşan yazı tipi adlarının çift tırnak içine alındığını görebilirsiniz. eğer almazsanız sorun yaşayabilirsiniz.
+-->
