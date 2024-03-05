@@ -1,0 +1,35 @@
+<!--
+    Adından da belli olduğu gibi, özellik seciciler sadece belli özelliğe sahip HTML elemanlarının seçilmesini sağlar.
+    Örneğin; bir form içinde bulunan ve type özelliği text olan bütün elemanları, yani metin kutularını seçebilirsiniz.
+
+
+    Özellik seçmek için kullanabileceğiniz söz dizimleri aşağıdaki gibidir.
+
+    [özellik]       - type          - type ozelligi olan tüm HTML elemanları seçilir.
+    [özellik=değer] - type="text"   - type ozelligi text olan tüm html elemanları secilir.
+    [özellik~=deger] - title~="web" - title özelliği içinde web kelimesi geçen elemanları secer.
+    [özellik|=deger] - title|="web" - title özelliği web ile başlayan elemanları secer.
+    [özellik^=deger] - a[href^="https"] - href özelliği https ile baslayan tüm <a> taglarını secer.
+    [özellik$=deger] - a[href$=".pdf"] - href özelliği .pdf ile biten tüm <a> taglarını secer.
+    [özellik*=deger] - a[href*="pdf"] - href özelliği icinde pdf metni olan tüm <a> taglarını secer.
+
+
+
+    yukarıdaki tablondan da görüldüğü gibi,
+
+    ** belli bir özelliğe sahip olan,
+    ** özelliği belli bir değere sahip olan,
+    ** özelliği belli bir değerle başlayan,
+    ** özelliği belli bir değerle biten,
+    ** özelliğinin icinde belli bir metin olan HTML komutları secilip CSS komutu uygulanabilir.
+-->
+
+
+<!--
+    input[type]         -  <input> elemanı icinde type ozelligine sahip olanları sec.
+    input[type="text"]  - <input> elemanı icinde type ozelligi text olanları sec.
+    a[target=_blank]    - <a> tagı icinde hedefi target degeri _blank olan elemanları sec.
+    img[title~="kedi"]  - <img> tagındaki title özelliği içinde kedi kelimesi olanları sec.
+    div[class*="menu"]  - class ozelligi icinde menu metni olan div elemanını seç.
+-->
+
