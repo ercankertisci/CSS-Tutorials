@@ -1,0 +1,30 @@
+<!--
+    asagidaki kodlar ise <article> tagı icinde bulunan 3 paragraftan 2. olanı secilmekte ve CSS kodu uygulanmaktadir.
+    buradaki kodlarda <p> taglari <article> taginin cocugudur. Seçim yaparken ebeveyn-cocuk iliskisini belirtmek icin
+    (>) işareti kullanilir. Örneğin; <article> taginin cocugu <p> tagıdır ifadesi icin article>p seklinde secici kullanılır.
+
+    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        article > p:nth-child(2){
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <p>birinci paragraf</p>
+        <p>ikinci paragraf</p>
+        <p>ucuncu paragraf</p>
+    </article>
+</body>
+</html>
