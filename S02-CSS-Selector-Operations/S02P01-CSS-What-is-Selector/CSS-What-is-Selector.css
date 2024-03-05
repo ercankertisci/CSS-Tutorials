@@ -1,0 +1,122 @@
+/*
+    Selector Nedir?
+
+    ** css kodlarında ve diğer bir çok yazılımda şöyle bir kural vardır. neyi seçerseniz onunla ilgili işlem yaparsınız.
+    yani eğer bir nesne ya da HTML komutu ile herhangi bir css kodu çalıştıracaksanız, öncelikle onu belirtmeniz ya da 
+    seçmeniz gerekir. işte bu aşamada selector ya da seçici dediğimiz kodlar devreye girmektedir.
+
+    ** selector'ler herhangi bir html komutunu, belli bir id değerine sahip html komutunu, belli bir class değerine sahip
+    html komutlarını veya belli bir özelliğe sahip html komutlarını seçmemizi ve css uygulamamızı sağlar. böylece farklı
+    html komutları için özel css kodu yazma şansına sahip olursunuz.
+
+
+*/
+
+p{
+    color:red
+    /* p tagı secilecek */
+}
+
+p strong{
+    color: red;
+    /* p tagı icindeki strong tagı secilecek.
+    yani css kodları p tagına degil, p tagı icinde bulunan strong tagına uygulanacak */
+}
+
+#ilk{
+    color: red;
+    /* id degeri ilk olan HTML komutları secilecek */
+}
+
+.son{
+    color: red;
+    /* class degeri son olan html komutları secilecek */
+}
+
+h1.egik{
+    color: red;
+    /* h1 tagı icinde bulunan ve class degeri egik olan eleman secilecek */
+}
+
+nav#buton{
+    color: red;
+    /* nav tagı icinde bulunan ve id degeri buton olan eleman secilecek */
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: red;
+    /* h1-h6 arasi tüm tagler secilecek */
+}
+
+body,strong,em{
+    color: red;
+    /* body,strong ve em tagları secilecek */
+}
+
+nav p{
+    color: red;
+    /* nav tagı icinde bulunan p tagı secilecek */
+}
+
+.banner{
+    color: red;
+    /* class degeri banner olan eleman secilecek */
+}
+
+.banner p{
+    color: red;
+
+    /* class degeri banner olan eleman icindeki p tagi secilecek */
+}
+
+.banner>.menu{
+color: red;
+
+/* class degeri banner olan eleman icindeki class degeri menu olan cocuk eleman secilecek */
+}
+
+.banner>.menu ul{
+    color: red;
+    
+    /* class degeri menu olan eleman icindeki ul tagını sec. */
+    }
+
+.banner>.menu ul{
+    color: red;
+    
+    /* class degeri menu olan eleman icindeki ul tagını sec. */
+    }
+
+
+.banner>.menu ul li{
+        color: red;
+        
+        /* class degeri menu olan eleman icindeki ul tagının icindeki li tagını sec. */
+        }
+
+nav.menu{
+    color: red;
+    /* nav tagı icinde bulunan ve class degeri menu olan eleman secilecek */
+}
+
+nav.menu li{
+    color: red;
+    /* nav tagi icinde bulunan ve class degeri menu olan eleman icindekili tagi secilecek */
+}
+
+body>p:first-child{
+    color: red;
+
+    /* body tagi icindeki ilk paragraf(ilk cocuk eleman) */
+}
+
+body>p:last-child{
+    color:red;
+    /* body tagi icindeki son paragraf ( son cocuk eleman) */
+}
+
+.nav>.menu>ul li:first-child{
+    color: red;
+
+    /*ul taginin icindeki ilk li elemani*/
+}
