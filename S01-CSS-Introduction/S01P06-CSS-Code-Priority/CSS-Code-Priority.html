@@ -1,0 +1,46 @@
+<!--
+    Bazı durumlarda iki veya daha fazla CSS kodu birbiri ile çakışmakta ve aynı HTML komutunu 
+    biçimlendirmeye çalışmaktadır.
+
+    Örneğin web sayfanızın <head> bölümünde bulunan css kodu paragraflardaki metinlerin rengini
+    kırmızı yapmaya çalışırken, harici css dosyasındaki kodlar mavi yapmaya çalışabilir. bu durumda hangisi geçerli olacak?
+
+    ** genel olarak bir kural koymak gerekirse; html komutuna daha yakın olan css kodu önceliklidir, diyebiliriz.
+    yani en öncelikli kodlar html komutu içine style özelliği ile yazılan css kodlarıdır. daha sonra head bölümü içine yazıla
+    kodlar, ondan sonra ise harici CSS dosyasına yazılan kodlar gelmektedir.
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="00051_CSS_ExternalCSS.css" type="text/css"/>
+</head>
+<body>
+    <p style="color:red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laboriosam.</p>
+</body>
+</html>
+
+<!--
+    Sonuç olarak bir web sayfası açıldığında CSS kodlarının çalışması aşağıdaki gibi olur.
+
+    1. Her sayfaya tarayıcının varsayılan CSS kodları uygulanır.
+
+    2. eğer sadece harici CSS dosyanız varsa, web sayfanıza önce tarayıcının varsayılan CSS kodları, daha sonra da
+    harici CSS kodları uygulanır. Çakışma durumunda harici CSS dosyasındaki kodlar önceliklidir.
+
+    3. Eğer dahili CSS kodlarınız varsa, web sayfanıza önce tarayıcının varsayılan CSS kodları, ondan sonra harici CSS
+    kodları, son olarak da dahili CSS kodları uygulanır. Çakışma durumunda dahili CSS dosyasındaki kodlar önceliklidir.
+
+    4. Eğer komut içi CSS kodlarınız varsa, web sayfanıza önce tarayıcının varsayılan CSS kodları, ondan sonra harici CSS
+    kodları, daha sonra dahili CSS kodları ve son olarak da komut içi CSS kodları uygulanır. Çakışma durumunda komut içi
+    CSS dosyasındaki kodlar önceliklidir.
+
+    5. Sonuç: sayfaya tüm CSS kodları uygulanır. Çakışma durumunda en son uygulanan CSS kodları geçerlidir.
+-->
