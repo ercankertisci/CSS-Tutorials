@@ -1,0 +1,101 @@
+/*
+    @author ercankertisci
+
+    CSS Yazım Kuralları
+
+    ** CSS ile kod yazmak HTML'den biraz daha zordur. Eğer belli bir düzen kullanmazsanız CSS kodları
+    arasında kaybolabilirsiniz.
+
+    ** CSS her HTML komutunu bir nesne ya da kutu olarak görmektedir. Her nesnenin de değişik özellikleri ve
+    her özelliğin de alabileceği farklı değerleri vardır. 
+
+    ** CSS komutları 3 parçadan oluşur. 
+            1. HTML Komutu (selector)
+            2. Özellik (property)
+            3. Değer (value)
+
+    tipik bir css komutunun yapısı aşağıdaki gibidir.
+
+    p{
+        color:red; font-size:20px; }
+
+    ** örneğin; <h1> tagının rengini ve boyutunu değiştirmek istiyorsanız aşağıdaki komutu kullanabilirsiniz.
+*/
+    h1{
+        color: blue;
+        font-size:16px;
+    }
+
+
+
+/*
+
+    ** css kodları yazarken gruplama yöntemini kullanabilirsiniz. Bu yöntem sayesinde birden fazla HTML komutu için 
+    tek bir CSS kodu yazabilirsiniz. 
+
+*/
+
+    h1,h2,h3,h4,h5,h6
+    {
+        color:magenta;
+    }
+
+/*
+
+** eğer tüm paragrafların ve resim açıklamalarının yazı tipini "Arial" yapmak istiyorsanız aşağıdaki kodları kullanabilirsiniz.
+
+
+*/
+
+p, figcaption
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+
+** eğer yazmak istediğiniz css kodunu sadece belli bir id değerine sahip HTML komutuna uygulamak istiyorsanız aşağıdaki sözdizimini
+kullanabilirsiniz.
+
+*/
+
+#id-degeri
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+/*
+
+** yukarıdaki örneği incelediğinizde seçicinin # ile başladığını görebilirsiniz. bu tür CSS kodları tek bir HTML komutunda
+kullanılmak üzere oluşturulur.
+
+Örneğin; <h1 id="anabaslik">Ercan Kertisci </h1> seklinde bir html komutu olduğunu düşünün.
+
+eğer yazdığınız css kodları sadece id değeri anabaslik olan HTML komutunu etkilesin diyorsanız aşağıdaki kodları yazabilirsiniz.
+
+*/
+
+#anabaslik{
+    color: blue;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*
+
+** bazı durumlarda yazdığınız css kodlarını birden fazla HTML komutuna uygulamak isteyebilirsiniz.
+Bu durumda yazdığınız CSS kodlarına bir isim veriyorsunuz ve HTML komutunun class özelliği ile istediğiniz css
+komutunu istediğiniz html komutuna uygulayabiliyorsunuz. 
+
+*/
+
+.mavi{
+    color: blue;
+}
+
+/*
+yukarıdaki css kodları class değeri mavi olan tüm html komutlarına otomatik olarak uygulanır.
+böylece yazacağınız tek bir css komutu ile birden fazla html komutunu biçimlendirme şansına sahip olursunuz.
+*/
