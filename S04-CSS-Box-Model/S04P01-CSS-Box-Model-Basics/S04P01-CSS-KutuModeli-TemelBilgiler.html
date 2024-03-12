@@ -1,0 +1,59 @@
+<!--
+    Kutu modeli sayesinde html elemanının genişliğini(width), yüksekliğini(height), iç-ara mesafelerini(padding),
+    dış-ara mesefaelerini(margin), kenarlık çizgi tipini ve kalınlığını değiştirebilirsiniz.
+
+    bazı html komutlarının block, bazı html komutlarının ise inline olarak çalıştığıdır.
+
+    Blok olarak çalışan: <hx>, <table>, <p> gibi komutlar sayfanın solundan sağına doğru kadar bulundukları satırı kaplarken,
+    
+    inline olarak çalışan <a> <b> veya <img> gibi komutlar sadece bulundukları alanı kaplar. 
+
+    Kutu Kenarlıkları
+
+    kutu kenarlıklarını kontrol etmek icin border ozelligi kullanilir.
+
+    border-style
+    border-top-style
+    border-right-style
+    border-bottom-style
+    border-left-style
+    (html elemanına degisik tipte cizgiler yapılmasını saglar)
+
+    border-width
+    border-top-width
+    border-right-width
+    border-bottom-width
+    border-left-width
+    (cizgi kalinligini ayarlar.)
+
+    border-color
+    border-top-color
+    border-right-color
+    border-bottom-color
+    border-left-color
+    (kenarlik rengini belirler)
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border-style: solid;
+            border-width: 2px;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>W3C Kimdir?</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur vero adipisci nobis quaerat et
+        sapiente minima ratione odit non.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, deserunt.</p>
+</body>
+</html>
