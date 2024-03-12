@@ -1,0 +1,50 @@
+<!--
+    eğer kutuya golge yapmak istiyorsanız box-shadow özelliğini kullanabilirsiniz.
+    bu özelliğin alabileceği değerleri ve açıklamaları aşağıda tabloda görebilirsiniz.
+
+    none        -> varsayılan değerdir. Gölge olmamasını sağlar.
+
+    h-shadow    -> gölgenin yatay boyutu
+
+    v-shadow    -> gölgenin dikey boyutu
+
+    blur        -> gölgenin kenarını belirlenen boyutta yumuşatır.
+
+    spread      -> gölgenin tüm yönlerde genişlemesini sağlar.
+
+    color       -> gölge rengi
+
+    inset       -> gölgeyi nesnenin iç tarafına yapar.
+
+gölge olusturmak icin kullanacağımız söz dizimi aşağıdaki gibidir.
+
+box-shadow: h-shadow v-shadow blur spread color inset
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu{
+            width: 300px;
+            height: 200px;
+            border-style: solid;
+            border-width: 5px;
+            background-color: yellow;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 40px;
+            box-shadow: 40px 20px 30px gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu"></div>
+</body>
+</html>
