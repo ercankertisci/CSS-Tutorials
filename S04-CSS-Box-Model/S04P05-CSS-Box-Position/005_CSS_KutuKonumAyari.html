@@ -1,0 +1,51 @@
+<!--
+    şu ana kadar yaptığımız çalışmalarda kutuların kenarlık, renk, background, boyut, iç-aralik, dış-aralik gibi
+    ayarlarini yaptık ama sayfanın neresinde olacağı ile ilgili herhangi bir ayar yapmadik. 
+    Kutularin konum/pozisyon ayarlarini yaparak sayfada bulunduklari yeri değiştirebilir,sağa, sola, yukarı veya aşağı
+    kaydirabilirsiniz.
+
+    aksini belirtmediginiz sürece block olarak adlandırılan html komutlari alt alta, inline olarak adlandırılan html
+    komutlari ise yazıldıkları yere göre alt alta, yan yana veya block komutlarin icinde yer alirlar.
+
+    hatırlayacaginiz gibi <hx>, <p>, <li>, <form>, <table> veya <div> gibi komutlar block davranışına sahiptir ve
+    bulunduklari yerdeki tüm satiri işgal ederler.
+    <a>, <span>, <em>, <b> veya <i> gibi kountlar ise inline davranışa sahiptir ve sadece bulunduklari yeri işgal ederler.
+
+    bazi durumlarda inline komutların block, block komutlarin ise inline şeklinde davranmasini isteriz. 
+    yani istersek css komutlari kullanarak inline komutların block şeklinde ya da block komutlarin inline şeklinde davranmasini
+    sağlayabilriiz.
+    html komutunun nasil davranacağını belirlemek için display özelliği kullanilir.
+
+    aşağıdaki kodları kullanarak block davranışa sahip <li> komutunun inline olarak davranmasini ve inline davranışa sahip <a>
+    komutunun ise block olarak davranmasini sağlayabiliriz.
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            display: inline;
+        }
+        a{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>deger1</li>
+        <li>deger2</li>
+    </ul>
+    <br>
+    <a href="www.google.com">Google</a>
+</body>
+</html>

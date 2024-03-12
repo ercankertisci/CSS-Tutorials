@@ -1,0 +1,51 @@
+<!--
+    kutularin sayfada bulunduklari yeri belirlemek icin position ozelligi kullanilir.
+    bu ozellik sayesinde bir kutunun sayfanin istedigimiz bolgesinde durmasini saglayabiliriz.
+
+
+    position:static;            -> her kutunun varsayilan degeridir. static degere sahip kutular
+                                   nereye konulduysa orada bulunurlar. yani şu ana kadar olusturdugumuz her kutu static idi.
+
+    
+    position:relative;          -> kutunun bulundugu konuma göre tasinmasini saglar. yani, kutuyu koyuldugu yerden 20px saga veya
+                                   30px asagiya tasiyabilirsiniz.
+
+    
+    position:fixed;             -> kutunun sayfaya göre ayarlanmasini saglar. Örneğin; sayfa üstünden 50px aşağıda ve sayfanin en solundan 50px
+                                   içerde görünmesini saglar. sayfa kaldırılsa bile aynı konumunu korur. örneğin; sayfaların en altında veya
+                                    en üstünde görünen menüler bu özelliğe sahiptir.
+    
+
+    position:absolute;          -> başka kutu içinde bulunan kutuları kontrol etmek icin kullanilir. icinde bulundugu kutuya göre üstten, sağdan,
+                                 alttan ve soldan mesafeler verilerek kutunun konumu ayarlanir.
+
+    
+    yukaridaki tablodan da görüldüğü gibi, herhangi bir kutunun varsayılan position degeri static'dir. 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu{
+            width: 400px;
+            height: 150px;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="bir" class="kutu"></div>
+    <div id="iki" class="kutu"></div>
+</body>
+</html>
+
+
+<!--
+    yukaridaki sekilden de goruldugu gibi, kutular ayni boyutta ve alt alta gorunmektedir.
+-->
