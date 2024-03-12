@@ -1,0 +1,54 @@
+<!--
+
+
+    ** bundan birkaç yıl öncesine kadar sayfa bölümlerinin oluşturulması için tablolar kullanılıyordu.
+    sayfanın en üstünde bulunan banner bölümü, banner bölümünün altında bulunan menü bölümü, yan menü, içerik ve sayfa altı
+    bölümleri sadece birer tablo hücresiydi.
+
+    isterseniz günümüzde de tablo kullanabilirsiniz ama artık tablolu sayfa düzeninin yerini bölümlü (div) sayfa düzeni aldı.
+
+    yani, artık sayfa düzeni yapmak için <table> tagı değil de, <div> <nav> <aside> <section> <article> ve <footer> gibi semantik
+    tagler kullanılıyor. peki neden tablolu sayfa düzeni terk edildi?
+
+    -> <div> ve diğer semantik taglarla yaptığınız sayfa düzeni sayfaların daha hızlı çalışmasını sağlıyor.
+
+    -> içeriği tasarımdan yalıtmak: <div> ve diğer semantik taglarla yaptığınız sayfa düzeninde, içerik web sayfası içinde bulunurken, görselleştirme
+        kodları ise harici bir CSS dosyasında bulunur. 
+
+    -> karmaşık sayfaların tasarlanması <diV> ve diğer semantik taglarla daha kolay ve daha esnektir.
+
+
+    ** <div> ve diğer semantik taglar yaptığınız sayfa düzeninin tek dezavantajı CSS bilmeyi gerektirmesidir. bölüm taglarını uygun yere konumlandırmak
+        ve biçimlendirmek için css kodları kullanılır. 
+
+    ** tablolu yapıda kullanılan hücreler yerine burada <div> ve diğer semantik HTML bölme tagları kullanılmaktadır.
+        görüldüğü gibi 
+        logo ve banner için <header>
+        menü için <nav>
+        yan menü için <aside>
+        içerik için <section>
+        alt kısım için de <footer> tagları kullanılmaktadır.
+
+        tüm bölmeleri tek bir büyük bölme içine almak için <div> tagı kullanılmaktadır. bölmeli sayfa düzeni hem daha hızlı hem de daha fazla esnektir.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style></style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>header</header>
+        <nav>naV</nav>
+        <aside>ASİDE</aside>
+        <section>section</section>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

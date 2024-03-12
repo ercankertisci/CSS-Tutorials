@@ -1,0 +1,58 @@
+/* sayfa kenarlarindaki bosluklari siliyoruz */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* tüm bölümleri barındıran <div> tagını ayarlıyoruz */
+
+#wrapper{
+    margin: auto;
+    max-width: 900px;
+    border-color: black;
+    border-style: solid;
+    min-height: 500px;
+    background-color: yellow;
+}
+
+header{
+    max-width: 900px;
+    height: 70px;
+    border-color: gray;
+    border-style: dashed;
+    background-color: cyan;
+}
+
+nav{
+    max-width: 900px;
+    height: 50px;
+    border-color: gray;
+    border-style: dashed;
+    background-color: pink;
+}
+
+aside{
+    float: left;
+    width: 150px;
+    min-height: 280px;
+    border-color: gray;
+    border-style: dashed;
+    background-color: cyan;
+}
+
+section{
+    float: left;
+    width: 738px;
+    min-height: 280px;
+    border-color: gray;
+    border-style: dashed;
+    background-color: white;
+}
+
+footer{
+    float: left;
+    min-width: 894px;
+    border-color: gray;
+    border-style: dashed;
+    background-color: pink;
+}
