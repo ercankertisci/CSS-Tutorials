@@ -1,0 +1,56 @@
+<!--
+    eger kucuk bir kutunuz varsa ve icine alabileceginden daha fazla icerik koyarsaniz adına
+    overflow veya taşma denilen olay meydana gelir.
+
+    içeriğin kutu dışına taştığı durumlarda overflow özelliğini kullanarak taşan içerik ile
+    ilgili ne yapacağınızı belirleyebilirsiniz. 
+    overflow ile ilgili değerleri ve açıklamaları aşağıda bulabilirsiniz.
+
+
+    overflow:visible;           -> varsayılan olarak bu deger kullanilir. 
+                                    eğer içerik kutu içine sığmazsa taşan kısım alttan devam eder ve ziyaretçiye
+                                    gösterilir.
+    
+
+    overflow:hidden;            -> eğer içerik kutu içine sığmazsa taşan kısım alttan devam eder fakat ziyaretçiye gösterilmez.
+
+    overflow: scroll;           -> eğer içerik kutu içine sığmazsa taşan kısım ziyaretçiye gösterilmez ama bir kaydırma çubuğu ile
+                                taşan içeriğin görüntülenmesi sağlanir.
+
+    overflow:auto;               -> eğer taşma olursa kaydırma çubuğu gösterilir ve taşan içerik kaydırma çubuğu ile görüntülenebilir.
+    
+
+    eğer yukarıda gösterilen ve metinlerin taştığı kutunun daha düzgün görünmesini istiyorsaniz, overflow: auto komutunu ekleyebilirsiniz.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu{
+            width: 300px;
+            height: 150px;
+            border-style: solid;
+            background-color: yellow;
+            overflow: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="kutu">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium id ratione, amet vitae dolorum explicabo nesciunt atque saepe reiciendis, suscipit illo eaque porro quibusdam minima cupiditate quod! Aspernatur eum, soluta illo consequuntur quaerat optio quod porro eveniet omnis repudiandae. Hic repudiandae quis adipisci minus fugit. Ex repellendus dolore vitae totam?</p>
+    </div>
+</body>
+</html>
+
+<!--
+    yukarıda eklenen overflow:auto komutu ile kutuda taşma olması durumunda bir kaydırma çubuğu eklenmesi sağlanır.
+
+    eğer kaydırma çubuğunun taşma olsa da olmasa da sürekli görünmesini istiyorsanız overflow:scroll; komutunu kullanabilirsiniz.
+-->
