@@ -1,0 +1,39 @@
+<!--
+    eger menuyu dikey degil de yatay yapmak istiyorsanız css kodlarında biraz degisiklik yapacagiz.
+    yatay menu olusturmak icin <ul> ve <li> tagları icin yazilmasi gereken kodlar 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+        li{
+            float: left;
+            width: 130px;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-color: blue;
+            border-style: solid;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+    <li><a href="index.html">Anasayfa</a></li>
+    <li><a href="urunler.html">Ürünlerimiz</a></li>
+    <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+    <li><a href="bizkimiz.html">Biz Kimiz?</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+</ul>
+</body>
+</html>
