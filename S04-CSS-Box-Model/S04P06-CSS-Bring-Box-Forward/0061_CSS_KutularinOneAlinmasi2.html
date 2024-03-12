@@ -1,0 +1,45 @@
+<!--
+    birinci kutuyu üste çıkarmak için z-index degerini yükseltmek ya da ikinci kutunun
+    z-index degerini azaltmak gerekir.
+    biz bu ornegimizde birinci kutunun z-index degerini 1, ikinci kutunun z-index degerini -1 yapacagiz.
+    böylece z-index degeri daha yüksek olan birinci kutu daha önde görünecektir.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu{
+            width: 400px;
+            height: 150px;
+            border-style: solid;
+            background-color: cyan;
+        }
+        #bir{
+            z-index: 1;
+        }
+        #iki{
+            position: relative;
+            top: -50px;
+            left: 50px;
+            background-color: yellow;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="bir" class="kutu"></div>
+    <div id="iki" class="kutu"></div>
+</body>
+</html>
+
+<!--
+    yhukarıdaki kodların calismasiyla birinci kutu ön tarafa gelir ve ekrandaki görüntü elde edilir.
+
+    işin özetini yapacak olursak; normalde daha sonradan eklenen eleman daha öncekilerin üstüne biner.
+    eğer çakışma olursa z-index özelliği ile nesnelerin önde veya arkada olmasını sağlayabiliriz.
+-->

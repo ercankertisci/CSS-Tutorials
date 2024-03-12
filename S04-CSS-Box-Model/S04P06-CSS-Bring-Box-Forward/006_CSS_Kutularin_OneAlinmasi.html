@@ -1,0 +1,36 @@
+<!--
+    bazi durumlarda kutular üst üste gelmekte ve birbirini örtmekte ya da kapatmaktadir.
+    böyle durumlarda kutuları öne veya arkaya almak gerekebilir. kutularin öne veya arkaya
+    taşınmasi icin z-index özelligi kullanilir. daha yüksek z-index degerine sahip olan eleman
+    daha önde görünür.
+
+    asagidaki kodlarda ikinci kutu 50px sola, -50px de yukarıya(ters yön) ötelenmektedir. ikinci kutu ilk kutunun üstüne binmektedir.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu{
+            width: 400px;
+            height: 150px;
+            border-style: solid;
+            background-color: cyan;
+        }
+        #iki{
+            position: relative;
+            top: -50px;
+            left: 50px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="bir" class="kutu"></div>
+    <div id="iki" class="kutu"></div>
+</body>
+</html>
